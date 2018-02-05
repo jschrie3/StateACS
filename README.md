@@ -15,5 +15,5 @@ Pull household data from Iowa betwen 2011 and 2016 into your R workspace and sav
 
 ```R
 library(StateACS)
-p.data <- getStateACS(2001, 2016, state = "IA", type = "personal", save = TRUE)
+p.data <- getStateACS(2001, 2016, state = "IA", type = "h", save = TRUE)
 ```

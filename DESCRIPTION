@@ -1,10 +1,10 @@
 Package: StateACS
-Title: What the Package Does (one line, title case)
+Title: Scraping data from the U.S. Census Bureau's American Community Survey
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Lawrence", "De Geest", email = "lrdegeest@gmail.com", role = c("aut", 	"cre"))
+Description: This packages scrapes ACS Public Use Microdata Sample (PUMS) data from the U.S. Census Bureau for a selected state and a selected number of years.
 Depends: R (>= 3.4.1)
-License: What license is it under?
+License: MIT License
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1.9000

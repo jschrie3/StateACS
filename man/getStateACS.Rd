@@ -7,25 +7,30 @@
 getStateACS(start, end, state, type, save = FALSE)
 }
 \arguments{
-\item{start}{starting year (e.g. 2001)}
+\item{start}{starting year (e.g. 2011)}
 
-\item{end}{ending year (e.g. 2016)}
+\item{end}{ending year (e.g. 2011)}
 
 \item{state}{state abbreviation (e.g. "IA" for Iowa)}
 
 \item{type}{personal ("p") or household ("h") data}
 
-\item{save}{save csv files of each year's data to your directory (Defaults to FALSE)}
+\item{save}{save csv files of each year's data to your directory. Defaults to FALSE.}
 }
 \value{
 list of data frames, one for each year
 }
 \description{
-Scrape 1-year personal or household PUMS (Public Use Microdata Sample) data for any state and any year(s) in the American Community Survey (ACS) (\url{https://www.census.gov/programs-surveys/acs/})
-
+Scrape personal or household data for any state and any year(s) in the American Community Survey (ACS)
+\url{https://www.census.gov/programs-surveys/acs/}
+}
+\details{
 The Census Bureau stores the data at \url{https://www2.census.gov/programs-surveys/acs/data/pums/}
 
 ACS PUMS documentation can be found at \url{https://www.census.gov/programs-surveys/acs/technical-documentation/pums/documentation.html}
+}
+\note{
+This package uses the function download.file() from base R's utils package
 }
 \examples{
 # Get personal data from Iowa for years 2001 to 2016:
@@ -34,4 +39,6 @@ p.data <- getStateACS(2001, 2016, state = "IA", type = "personal")
 \author{
 Lawrence R De Geest, \email{lrdegeest@gmail.com}
 }
-
+\keyword{"American}
+\keyword{Community}
+\keyword{Survey"}
